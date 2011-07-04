@@ -23,7 +23,7 @@ rem Standard install section
 color 3
 echo .
 echo    ````````````$````````$
-echo    ````````````$````````$  *SmartAI scripts*
+echo    ````````````$````````$  *SmartAI Lab scripts*
 echo    $$$```$$$``$$$``$$$``$
 echo    $``$`````$``$``$```$`$$$$$
 echo    $$$```$$$$``$``$`````$```$
