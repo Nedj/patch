@@ -82,7 +82,7 @@ DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,1,0,100,0,500,1000,600000,600000,11,58054,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Blessing of Kings on Spawn'),
 (@ENTRY,0,1,0,2,0,100,1,0,50,0,0,11,58053,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Holy Light at 50% HP'),
-(@ENTRY,0,2,0,14,0,100,0,50000,10,20000,30000,11,58053,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Holy Light on Friendlies');
+(@ENTRY,0,2,0,14,0,100,0,50000,10,20000,30000,11,58053,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Holy Light on Friendlies');
 
 -- Argent Champion
 SET @ENTRY := 33707;
@@ -188,7 +188,7 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,1,0,100,0,500,1000,600000,600000,11,58026,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Blessing of the Crusade on Spawn'),
-(@ENTRY,0,1,0,16,0,100,0,58026,30,20000,40000,11,58026,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Blessing of the Crusade on Friendlies');
+(@ENTRY,0,1,0,16,0,100,0,58026,30,20000,40000,11,58026,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Blessing of the Crusade on Friendlies');
 
 -- Blight Falconer
 SET @ENTRY := 31262;
@@ -496,7 +496,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,0,0,100,0,8000,8000,15000,19800,11,16568,0,0,0,0,0,2,1,0,0,0,0,0,0,'Cast Mind Flay'),
 (@ENTRY,0,1,0,1,0,100,0,500,1000,600000,600000,11,13864,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Power Word: Fortitude on Spawn'),
 (@ENTRY,0,2,0,2,0,100,1,0,45,0,0,11,11642,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Heal at 45% HP'),
-(@ENTRY,0,3,0,14,0,100,0,5000,10,20000,30000,11,11642,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Heal on Friendlies');
+(@ENTRY,0,3,0,14,0,100,0,5000,10,20000,30000,11,11642,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Heal on Friendlies');
 
 -- Cultist Bombardier
 SET @ENTRY := 33695;
@@ -1945,7 +1945,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,4,0,100,1,0,0,0,0,11,32674,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Avenger\'s Shield on Aggro'),
 (@ENTRY,0,1,0,0,0,100,0,5000,5000,17800,19800,11,58154,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hammer of Injustice'),
 (@ENTRY,0,2,0,2,0,100,1,0,45,0,0,11,58153,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Unholy Light at 45% HP'),
-(@ENTRY,0,3,0,14,0,100,0,4000,10,20000,30000,11,58153,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Unholy Light on Friendlies');
+(@ENTRY,0,3,0,14,0,100,0,4000,10,20000,30000,11,58153,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Unholy Light on Friendlies');
 
 -- Reanimated Miner
 SET @ENTRY := 31843;
@@ -1962,7 +1962,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,4,0,100,1,0,0,0,0,11,32674,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Avenger\'s Shield on Aggro'),
 (@ENTRY,0,1,0,0,0,100,0,5000,5000,17800,19800,11,58154,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hammer of Injustice'),
 (@ENTRY,0,2,0,2,0,100,1,0,45,0,0,11,58153,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Unholy Light at 45% HP'),
-(@ENTRY,0,3,0,14,0,100,0,4000,10,20000,30000,11,58153,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Unholy Light on Friendlies');
+(@ENTRY,0,3,0,14,0,100,0,4000,10,20000,30000,11,58153,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Unholy Light on Friendlies');
 
 -- Rabid Cannibal
 SET @ENTRY := 29722;
@@ -1979,7 +1979,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,4,0,100,1,0,0,0,0,11,32674,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Avenger\'s Shield on Aggro'),
 (@ENTRY,0,1,0,0,0,100,0,5000,5000,17800,19800,11,58154,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Hammer of Injustice'),
 (@ENTRY,0,2,0,2,0,100,1,0,45,0,0,11,58153,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Unholy Light at 45% HP'),
-(@ENTRY,0,3,0,14,0,100,0,4000,10,20000,30000,11,58153,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Unholy Light on Friendlies');
+(@ENTRY,0,3,0,14,0,100,0,4000,10,20000,30000,11,58153,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Unholy Light on Friendlies');
 
 -- Rith
 SET @ENTRY := 31196;

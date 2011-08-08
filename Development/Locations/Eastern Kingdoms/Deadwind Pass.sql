@@ -63,7 +63,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,14,0,1,0,100,0,500,1000,600000,600000,11,12550,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Lightning Shield on Spawn'),
 (@ENTRY,0,15,0,0,1,100,0,4700,8800,10500,13800,11,15039,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Flame Shock'),
 (@ENTRY,0,16,0,2,1,100,1,0,45,0,0,11,6742,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Bloodlust at 45% HP'),
-(@ENTRY,0,17,0,16,1,100,0,6742,30,20000,40000,11,6742,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Bloodlust on Friendlies');
+(@ENTRY,0,17,0,16,1,100,0,6742,30,20000,40000,11,6742,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Bloodlust on Friendlies');
 -- NPC talk text insert
 SET @ENTRY := 7379;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;

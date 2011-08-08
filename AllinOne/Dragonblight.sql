@@ -75,7 +75,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,12,0,7,3,100,1,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Reset on Evade'),
 (@ENTRY,0,13,0,2,3,100,1,0,15,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 15% HP'),
 (@ENTRY,0,14,0,4,1,100,1,0,0,0,0,11,51605,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Zeal on Aggro'),
-(@ENTRY,0,15,0,16,1,100,0,47257,25,12000,16000,11,47257,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Empower on Friendlies');
+(@ENTRY,0,15,0,16,1,100,0,47257,25,12000,16000,11,47257,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Empower on Friendlies');
 -- NPC talk text insert
 SET @ENTRY := 26319;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
@@ -560,7 +560,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,12,0,7,3,100,1,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Reset on Evade'),
 (@ENTRY,0,13,0,2,3,100,1,0,15,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 15% HP'),
 (@ENTRY,0,14,0,2,1,100,1,0,50,0,0,11,31739,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Heal at 50% HP'),
-(@ENTRY,0,15,0,14,1,100,0,4000,10,12000,15000,11,31739,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Heal on Friendlies');
+(@ENTRY,0,15,0,14,1,100,0,4000,10,12000,15000,11,31739,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Heal on Friendlies');
 -- NPC talk text insert
 SET @ENTRY := 26780;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
@@ -911,7 +911,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,13,0,2,3,100,1,0,15,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 15% HP'),
 (@ENTRY,0,14,0,0,1,100,0,9000,9000,35000,45000,11,49306,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Circle of Healing'),
 (@ENTRY,0,15,0,2,1,100,1,0,50,0,0,11,49348,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Greater Heal at 50% HP'),
-(@ENTRY,0,16,0,14,1,100,0,4000,10,12000,17000,11,25058,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Renew on Friendlies'),
+(@ENTRY,0,16,0,14,1,100,0,4000,10,12000,17000,11,25058,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Renew on Friendlies'),
 (@ENTRY,0,17,0,2,1,100,1,0,30,0,0,11,32595,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Power Word: Shield at 30% HP');
 -- NPC talk text insert
 SET @ENTRY := 27677;
@@ -1377,7 +1377,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,8,0,3,2,100,0,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving at 15% Mana'),
 (@ENTRY,0,9,0,3,2,100,0,30,100,100,100,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 When Mana is above 30%'),
 (@ENTRY,0,10,0,2,1,100,1,0,50,0,0,11,28902,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Bloodlust at 50% HP'),
-(@ENTRY,0,11,0,16,1,100,0,28902,20,12000,19000,11,28902,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Bloodlust on Friendlies'),
+(@ENTRY,0,11,0,16,1,100,0,28902,20,12000,19000,11,28902,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Bloodlust on Friendlies'),
 (@ENTRY,0,12,0,0,1,100,0,5000,6000,12000,13500,11,19133,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Frost Shock'),
 (@ENTRY,0,13,0,0,1,100,0,9000,9000,17000,24000,11,22355,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Chain Lightning');
 
@@ -2066,7 +2066,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,12,0,7,3,100,1,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Reset on Evade'),
 (@ENTRY,0,13,0,2,3,100,1,0,15,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 15% HP'),
 (@ENTRY,0,14,0,2,1,100,1,0,40,0,0,11,50743,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Unholy Frenzy at 40% HP'),
-(@ENTRY,0,15,0,16,1,100,0,50743,30,15000,35000,11,50743,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Unholy Frenzy on Friendlies');
+(@ENTRY,0,15,0,16,1,100,0,50743,30,15000,35000,11,50743,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Unholy Frenzy on Friendlies');
 -- NPC talk text insert
 SET @ENTRY := 27357;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
@@ -2125,7 +2125,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,12,0,7,3,100,1,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Reset on Evade'),
 (@ENTRY,0,13,0,2,3,100,1,0,15,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 15% HP'),
 (@ENTRY,0,14,0,2,1,100,1,0,50,0,0,11,52011,0,0,0,0,0,1,1,0,0,0,0,0,0,'Cast Renewing Beam at 50% HP'),
-(@ENTRY,0,15,0,14,1,100,0,500,10,12000,19000,11,52011,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Renewing Beam on Friendlies');
+(@ENTRY,0,15,0,14,1,100,0,500,10,12000,19000,11,52011,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Renewing Beam on Friendlies');
 -- NPC talk text insert
 SET @ENTRY := 26705;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
@@ -2150,7 +2150,7 @@ SET @ENTRY := 26201;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,14,0,100,0,4000,40,20000,30000,11,11986,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies'),
+(@ENTRY,0,0,0,14,0,100,0,4000,40,20000,30000,11,11986,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies'),
 (@ENTRY,0,1,0,0,0,100,0,3400,4800,3400,4800,11,12548,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Frost Shock'),
 (@ENTRY,0,2,0,1,0,100,0,500,1000,600000,600000,11,12550,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Lightning Shield on Spawn');
 
@@ -2608,7 +2608,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,0,0,100,0,5000,5000,12000,13000,11,25025,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Earth Shock'),
 (@ENTRY,0,1,0,0,0,100,0,8000,8000,16000,17000,11,39945,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Chain Lightning'),
 (@ENTRY,0,2,0,2,0,100,1,0,30,0,0,11,49309,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Lesser Healing Wave at 30% HP'),
-(@ENTRY,0,3,0,14,0,100,0,4000,10,20000,30000,11,16367,0,0,0,0,0,6,1,0,0,0,0,0,0,'Cast Chain Heal on Friendlies'),
+(@ENTRY,0,3,0,14,0,100,0,4000,10,20000,30000,11,16367,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Chain Heal on Friendlies'),
 (@ENTRY,0,4,0,1,0,100,0,500,1000,600000,600000,11,34827,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Water Shield on Spawn');
 
 -- Wyrmrest Protector

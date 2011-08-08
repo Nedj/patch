@@ -704,7 +704,7 @@ SET @ENTRY := 16345;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,16,0,100,0,28902,30,20000,40000,11,28902,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Bloodlust on Friendlies'),
+(@ENTRY,0,0,0,16,0,100,0,28902,30,20000,40000,11,28902,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Bloodlust on Friendlies'),
 (@ENTRY,0,1,0,1,0,100,1,1000,1000,0,0,11,28904,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Summon Pet OOC');
 
 -- Shadowpine Headhunter
@@ -743,7 +743,7 @@ SET @ENTRY := 16343;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,14,0,100,0,300,10,20000,30000,11,7154,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Dark Offering on Friendlies');
+(@ENTRY,0,0,0,14,0,100,0,300,10,20000,30000,11,7154,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Dark Offering on Friendlies');
 
 -- Shadowpine Ripper
 SET @ENTRY := 16340;

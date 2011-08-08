@@ -122,7 +122,7 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,9,0,100,30,0,10,15800,16900,11,85643,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Mind Sear on Close'),
-(@ENTRY,0,1,0,14,0,100,30,4000,10,20000,30000,11,85575,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Shadow Mending on Friendlies'),
+(@ENTRY,0,1,0,14,0,100,30,4000,10,20000,30000,11,85575,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Shadow Mending on Friendlies'),
 (@ENTRY,0,2,0,9,0,100,30,0,6,12000,13000,11,85664,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Umbral Flames on Close');
 
 -- Twilight Soul Blade
@@ -238,7 +238,7 @@ DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,0,0,100,30,8000,8000,17800,19200,11,84856,0,0,0,0,0,1,1,0,0,0,0,0,0,'Cast Hungering Shadows'),
 (@ENTRY,0,1,0,0,0,100,30,12000,17000,35000,48000,11,84855,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Dark Mending'),
-(@ENTRY,0,2,0,14,0,100,30,400000,10,25000,35000,11,84855,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Dark Mending on Friendlies');
+(@ENTRY,0,2,0,14,0,100,30,400000,10,25000,35000,11,84855,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Dark Mending on Friendlies');
 
 -- Chosen Warrior
 SET @ENTRY := 46591;

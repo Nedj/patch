@@ -123,7 +123,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,18,0,3,2,100,4,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving at 15% Mana'),
 (@ENTRY,0,19,0,3,2,100,4,30,100,100,100,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 When Mana is above 30%'),
 (@ENTRY,0,20,0,0,1,100,6,4000,8000,10000,15000,11,50379,0,0,0,0,0,5,0,0,0,0,0,0,0,'Cast Cripple'),
-(@ENTRY,0,21,0,14,1,100,7,25000,30,0,0,11,49805,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Unholy Frenzy on Friendlies');
+(@ENTRY,0,21,0,14,1,100,7,25000,30,0,0,11,49805,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Unholy Frenzy on Friendlies');
 
 -- Scourge Brute
 SET @ENTRY := 26623;
@@ -222,7 +222,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,11,0,2,3,100,7,0,15,0,0,25,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Flee at 15% HP'),
 (@ENTRY,0,12,0,7,3,100,7,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Reset on Evade'),
 (@ENTRY,0,13,0,2,3,100,7,0,15,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 15% HP'),
-(@ENTRY,0,14,0,14,1,100,6,15000,45,6000,9000,11,48894,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Chain Heal on Friendlies');
+(@ENTRY,0,14,0,14,1,100,6,15000,45,6000,9000,11,48894,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Chain Heal on Friendlies');
 -- NPC talk text insert
 SET @ENTRY := 26639;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;

@@ -1312,7 +1312,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,12,0,7,3,100,1,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Reset on Evade'),
 (@ENTRY,0,13,0,2,3,100,1,0,15,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 15% HP'),
 (@ENTRY,0,14,0,2,1,100,1,0,50,0,0,11,11640,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Renew at 50% HP'),
-(@ENTRY,0,15,0,14,1,100,0,3000,40,15000,18000,11,11640,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Renew on Friendlies');
+(@ENTRY,0,15,0,14,1,100,0,3000,40,15000,18000,11,11640,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Renew on Friendlies');
 -- NPC talk text insert
 SET @ENTRY := 23794;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;
@@ -1990,7 +1990,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,8,0,3,2,100,0,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving at 15% Mana'),
 (@ENTRY,0,9,0,3,2,100,0,30,100,100,100,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 When Mana is above 30%'),
 (@ENTRY,0,10,0,2,1,100,1,0,50,0,0,11,11986,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Healing Wave at 50% HP'),
-(@ENTRY,0,11,0,14,1,100,0,3000,40,14000,19000,11,11986,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies');
+(@ENTRY,0,11,0,14,1,100,0,3000,40,14000,19000,11,11986,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies');
 
 -- Winterskorn Oracle
 SET @ENTRY := 23669;
@@ -2086,7 +2086,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,10,0,9,1,100,0,0,15,25000,28000,11,34787,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Freezing Circle on Close'),
 (@ENTRY,0,11,0,0,1,100,0,8000,8000,12000,12000,11,43453,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Rune Ward'),
 (@ENTRY,0,12,0,2,1,100,1,0,50,0,0,11,11986,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Healing Wave at 50% HP'),
-(@ENTRY,0,13,0,14,1,100,0,3000,40,14000,19000,11,11986,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies');
+(@ENTRY,0,13,0,14,1,100,0,3000,40,14000,19000,11,11986,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies');
 
 -- Yorus the Flesh Harvester
 SET @ENTRY := 24214;

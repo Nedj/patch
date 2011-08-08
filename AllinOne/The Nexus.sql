@@ -98,8 +98,8 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,4,0,100,7,0,0,0,0,28,47543,0,0,0,0,0,1,0,0,0,0,0,0,0,'Remove Aura on Aggro'),
-(@ENTRY,0,1,0,14,0,100,2,10000,25,12100,19000,11,17843,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Flash Heal on Friendlies'),
-(@ENTRY,0,2,0,14,0,100,4,10000,25,12100,19000,11,56919,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Flash Heal on Friendlies'),
+(@ENTRY,0,1,0,14,0,100,2,10000,25,12100,19000,11,17843,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Flash Heal on Friendlies'),
+(@ENTRY,0,2,0,14,0,100,4,10000,25,12100,19000,11,56919,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Flash Heal on Friendlies'),
 (@ENTRY,0,3,0,0,0,100,2,9000,11000,9500,15000,11,47697,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shadow Word: Death'),
 (@ENTRY,0,4,0,0,0,100,4,9000,11000,9500,15000,11,56920,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shadow Word: Death');
 
@@ -129,8 +129,8 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,4,0,100,7,0,0,0,0,28,47543,0,0,0,0,0,1,0,0,0,0,0,0,0,'Remove Aura on Aggro'),
-(@ENTRY,0,1,0,14,0,100,2,10000,25,12100,19000,11,17843,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Flash Heal on Friendlies'),
-(@ENTRY,0,2,0,14,0,100,4,10000,25,12100,19000,11,56919,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Flash Heal on Friendlies'),
+(@ENTRY,0,1,0,14,0,100,2,10000,25,12100,19000,11,17843,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Flash Heal on Friendlies'),
+(@ENTRY,0,2,0,14,0,100,4,10000,25,12100,19000,11,56919,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Flash Heal on Friendlies'),
 (@ENTRY,0,3,0,0,0,100,2,9000,11000,9500,15000,11,47697,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shadow Word: Death'),
 (@ENTRY,0,4,0,0,0,100,4,9000,11000,9500,15000,11,56920,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Shadow Word: Death');
 
@@ -204,8 +204,8 @@ SET @ENTRY := 26735;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,14,0,100,2,9000,25,9500,15000,11,15586,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Heal on Friendlies'),
-(@ENTRY,0,1,0,14,0,100,4,9000,25,9500,15000,11,61326,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Heal on Friendlies'),
+(@ENTRY,0,0,0,14,0,100,2,9000,25,9500,15000,11,15586,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Heal on Friendlies'),
+(@ENTRY,0,1,0,14,0,100,4,9000,25,9500,15000,11,61326,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Heal on Friendlies'),
 (@ENTRY,0,2,0,0,0,100,2,4000,6000,9500,15000,11,38881,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Arcane Blast'),
 (@ENTRY,0,3,0,0,0,100,4,4000,6000,9500,15000,11,56969,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Arcane Blast');
 

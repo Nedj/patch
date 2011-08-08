@@ -347,7 +347,7 @@ SET @ENTRY := 29177;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,14,0,100,0,300000,10,20000,30000,11,37979,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Heal on Friendlies');
+(@ENTRY,0,0,0,14,0,100,0,300000,10,20000,30000,11,37979,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Heal on Friendlies');
 
 -- Death Knight
 SET @ENTRY := 28934;
@@ -395,7 +395,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,0,0,100,0,3000,4000,12000,13000,11,53643,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Holy Strike'),
 (@ENTRY,0,1,0,0,0,100,0,5000,7000,11000,16000,11,53629,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Uppercut'),
 (@ENTRY,0,2,0,9,0,100,0,0,35,15800,18300,11,53638,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Holy Wrath on Close'),
-(@ENTRY,0,3,0,14,0,100,0,300000,12,28000,32000,11,29427,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Heal on Friendlies'),
+(@ENTRY,0,3,0,14,0,100,0,300000,12,28000,32000,11,29427,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Heal on Friendlies'),
 (@ENTRY,0,4,0,4,0,100,1,0,0,0,0,11,53625,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Heroic Leap on Aggro');
 
 -- Disciple of Frost
@@ -723,7 +723,7 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,0,0,100,0,8000,8000,17000,18000,11,53630,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Thunder'),
-(@ENTRY,0,1,0,14,0,100,0,300000,20,20000,30000,11,33642,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Chain Heal on Friendlies');
+(@ENTRY,0,1,0,14,0,100,0,300000,20,20000,30000,11,33642,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Chain Heal on Friendlies');
 
 -- Scarlet Medic
 SET @ENTRY := 28608;

@@ -694,7 +694,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,7,0,3,1,100,0,0,15,0,0,22,2,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 2 at 15% Mana'),
 (@ENTRY,0,8,0,3,2,100,0,0,15,0,0,21,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Start Moving at 15% Mana'),
 (@ENTRY,0,9,0,3,2,100,0,30,100,100,100,22,1,0,0,0,0,0,1,0,0,0,0,0,0,0,'Set Phase 1 When Mana is above 30%'),
-(@ENTRY,0,10,0,14,1,100,0,2000,40,12000,15000,11,11640,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Renew on Friendlies'),
+(@ENTRY,0,10,0,14,1,100,0,2000,40,12000,15000,11,11640,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Renew on Friendlies'),
 (@ENTRY,0,11,0,0,1,100,0,8000,13000,30000,40000,11,11974,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Power Word: Shield');
 
 -- Heb'Jin
@@ -1067,7 +1067,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,9,0,100,0,0,20,3400,4800,11,12548,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Frost Shock on Close'),
 (@ENTRY,0,1,0,1,0,100,0,500,1000,600000,600000,11,12550,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Lightning Shield on Spawn'),
 (@ENTRY,0,2,0,16,0,100,0,12550,1,15000,30000,11,12550,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Lightning Shield on Repeat'),
-(@ENTRY,0,3,0,14,0,100,0,2000,40,9000,12000,11,11986,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies'),
+(@ENTRY,0,3,0,14,0,100,0,2000,40,9000,12000,11,11986,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies'),
 (@ENTRY,0,4,0,2,0,100,1,0,30,0,0,11,50420,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Enrage at 30% HP'),
 (@ENTRY,0,5,0,2,0,100,1,0,30,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 30% HP');
 -- NPC talk text insert
@@ -1238,7 +1238,7 @@ UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,9,0,100,0,0,10,9000,15000,11,52719,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Concussion Blow on Close'),
-(@ENTRY,0,1,0,14,0,100,0,2000,40,9000,15000,11,25058,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Renew on Friendlies'),
+(@ENTRY,0,1,0,14,0,100,0,2000,40,9000,15000,11,25058,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Renew on Friendlies'),
 (@ENTRY,0,2,0,2,0,100,1,0,50,0,0,11,25058,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Renew at 50% HP');
 
 -- Vargul Deathwaker
@@ -1391,7 +1391,7 @@ SET @ENTRY := 30022;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
-(@ENTRY,0,0,0,14,0,100,0,5000,45,14000,21000,11,55975,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Hysteria on Friendlies'),
+(@ENTRY,0,0,0,14,0,100,0,5000,45,14000,21000,11,55975,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Hysteria on Friendlies'),
 (@ENTRY,0,1,0,1,0,100,0,500,1000,600000,600000,11,50689,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Blood Presence on Spawn'),
 (@ENTRY,0,2,0,0,0,100,0,16000,21000,21000,30000,11,55974,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Blood Boil'),
 (@ENTRY,0,3,0,0,0,100,0,6000,11000,12000,16000,11,55973,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Blood Plague'),

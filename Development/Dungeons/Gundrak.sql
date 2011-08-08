@@ -120,9 +120,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,3,0,100,6,0,30,22000,29000,11,55582,0,0,0,0,0,5,1,0,0,0,0,0,0,'Cast Mana Link at 30% MP'),
 (@ENTRY,0,1,0,2,0,100,3,0,50,0,0,11,55599,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Earth Shield at 50% HP'),
 (@ENTRY,0,2,0,2,0,100,5,0,50,0,0,11,58981,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Earth Shield at 50% HP'),
-(@ENTRY,0,3,0,14,0,100,2,30000,40,14000,21000,11,55597,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies'),
-(@ENTRY,0,4,0,14,0,100,4,30000,40,14000,21000,11,58980,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies'),
-(@ENTRY,0,5,0,14,0,100,6,10000,30,12000,15000,11,55598,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Cleanse Magic on Friendlies');
+(@ENTRY,0,3,0,14,0,100,2,30000,40,14000,21000,11,55597,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies'),
+(@ENTRY,0,4,0,14,0,100,4,30000,40,14000,21000,11,58980,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies'),
+(@ENTRY,0,5,0,14,0,100,6,10000,30,12000,15000,11,55598,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Cleanse Magic on Friendlies');
 
 -- Drakkari Inciter
 SET @ENTRY := 29874;

@@ -156,8 +156,8 @@ DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@ENTRY,0,0,0,0,0,100,2,6000,6000,12000,12000,11,54965,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Bolthorn\'s Rune of Flame'),
 (@ENTRY,0,1,0,0,0,100,4,6000,6000,12000,12000,11,59617,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Bolthorn\'s Rune of Flame'),
-(@ENTRY,0,2,0,16,0,100,2,42740,100,17000,25000,11,42740,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Njord\'s Rune of Protection on Friendlies'),
-(@ENTRY,0,3,0,16,0,100,2,59616,100,17000,25000,11,59616,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Njord\'s Rune of Protection on Friendlies');
+(@ENTRY,0,2,0,16,0,100,2,42740,100,17000,25000,11,42740,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Njord\'s Rune of Protection on Friendlies'),
+(@ENTRY,0,3,0,16,0,100,2,59616,100,17000,25000,11,59616,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Njord\'s Rune of Protection on Friendlies');
 
 -- Proto-Drake Rider
 SET @ENTRY := 24849;
@@ -217,7 +217,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,11,0,2,3,100,7,0,15,0,0,25,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Flee at 15% HP'),
 (@ENTRY,0,12,0,7,3,100,7,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Reset on Evade'),
 (@ENTRY,0,13,0,2,3,100,7,0,15,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 15% HP'),
-(@ENTRY,0,14,0,14,1,100,6,7000,100,7000,7000,11,51586,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies'),
+(@ENTRY,0,14,0,14,1,100,6,7000,100,7000,7000,11,51586,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Healing Wave on Friendlies'),
 (@ENTRY,0,15,0,0,1,100,6,1500,4000,8000,10000,11,51588,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Flame Shock');
 -- NPC talk text insert
 SET @ENTRY := 28410;
@@ -314,8 +314,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,23,0,7,2,100,5,0,0,0,0,22,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Reset on Evade'),
 (@ENTRY,0,24,0,2,2,100,5,0,15,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'Say Text at 15% HP'),
 (@ENTRY,0,25,0,0,1,100,4,2000,3000,8000,9500,11,59695,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Debilitating Strike'),
-(@ENTRY,0,26,0,16,1,100,2,43664,100,15000,21000,11,43664,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Unholy Rage on Friendlies'),
-(@ENTRY,0,27,0,16,1,100,4,43664,100,15000,21000,11,59694,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Unholy Rage on Friendlies');
+(@ENTRY,0,26,0,16,1,100,2,43664,100,15000,21000,11,43664,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Unholy Rage on Friendlies'),
+(@ENTRY,0,27,0,16,1,100,4,43664,100,15000,21000,11,59694,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Unholy Rage on Friendlies');
 -- NPC talk text insert
 SET @ENTRY := 24082;
 DELETE FROM `creature_text` WHERE `entry`=@ENTRY;

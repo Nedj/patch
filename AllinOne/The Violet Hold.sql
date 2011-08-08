@@ -144,7 +144,7 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,10,0,2,1,100,7,0,30,0,0,11,54516,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Bloodlust at 30% HP'),
 (@ENTRY,0,11,0,0,1,100,6,13000,20000,18000,25000,11,59463,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Break Bonds'),
 (@ENTRY,0,12,0,0,1,100,6,1000,5000,120000,130000,11,59471,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Earth Shield'),
-(@ENTRY,0,13,0,14,1,100,6,30000,40,15000,22000,11,59473,0,0,0,0,0,6,0,0,0,0,0,0,0,'Cast Chain Heal on Friendlies');
+(@ENTRY,0,13,0,14,1,100,6,30000,40,15000,22000,11,59473,0,0,0,0,0,7,0,0,0,0,0,0,0,'Cast Chain Heal on Friendlies');
 
 -- Void Lord
 SET @ENTRY := 32230;
