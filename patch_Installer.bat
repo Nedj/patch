@@ -44,7 +44,7 @@ set /p wdb=What is your World database name?       [world]      :
 if %wdb%. == . set wdb=world
 
 :install
-set dbpath=AllinOne
+set dbpath=!Milestone
 set optim=DB_Optimizer
 set mysql=.
 
@@ -67,7 +67,7 @@ if %quick% == off set /p yesno=Do you wish to continue? (y/n)
 if %quick% == off if %yesno% neq y if %yesno% neq Y goto sd2
 
 echo.
-echo Importing *patch* scripts
+echo Importing *patch* Milestone
 
 for %%i in (%dbpath%\*.sql) do if %%i neq Database\Character_Structure.sql if %%i neq Database\Auth_Structure.sql echo %%i & %mysql%\mysql -q -s -h %svr% --user=%user% --password=%pass% --port=%port% %wdb% < %%i
 
