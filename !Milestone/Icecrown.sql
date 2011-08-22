@@ -522,19 +522,6 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,4,0,100,1,0,0,0,0,11,50324,0,0,0,0,0,1,0,0,0,0,0,0,0,'Cast Bone Armor on Aggro'),
 (@ENTRY,0,1,0,0,0,100,0,5000,5000,13400,16700,11,50323,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Sharpened Bone');
 
--- Cultist Shard Watcher <Cult of the Damned>
-DELETE FROM `creature` WHERE `guid`=501556;
-INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`) VALUES
-(501556,27452,571,1,1,0,0,'6578.45','2445.25','658.076','3.37726',300,0,0,42,0,0,0,0,0,0);
-
-DELETE FROM `creature` WHERE `guid`=501771;
-INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`) VALUES
-(501771,27452,571,1,1,0,0,'6520.49','2569.91','584.733','4.26946',300,0,0,42,0,0,0,0,0,0);
-
-DELETE FROM `creature` WHERE `guid`=501772;
-INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`) VALUES
-(501772,27452,571,1,1,0,0,'6636.75','2320.4','585.491','5.96906',300,0,0,42,0,0,0,0,0,0);
-
 SET @ENTRY := 32349;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid`=@ENTRY;
@@ -2304,14 +2291,6 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,0,0,100,0,5000,5000,12000,12300,11,12024,0,0,0,0,0,2,0,0,0,0,0,0,0,'Cast Net');
 
 -- Shadow Channeler <Cult of the Damned>
-DELETE FROM `creature` WHERE `guid`=501991;
-INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`) VALUES
-(501991,32262,571,1,1,0,520,'8162.6','2058.11','550.597','3.72547',300,0,0,10080,8814,0,0,0,0,0);
-
-DELETE FROM `creature` WHERE `guid`=501992;
-INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`) VALUES
-(501992,32262,571,1,1,10632,520,'8140.47','2062.8','550.597','5.33397',300,0,0,9740,8636,0,0,0,0,0);
-
 SET @ENTRY := 32262;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=@ENTRY;
 DELETE FROM `smart_scripts` WHERE `source_type`=0 AND `entryorguid` IN (-120972,-120971,-500818,-500819,-501992,-501991);
